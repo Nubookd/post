@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="./js/topText.js" defer></script>
+    <script src="./js/keyboard.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <h1 class="logo__title">
+          <a class="logo__link" href="https://github.com/Nubookd"
+            >Дмитрий Румянцев</a
+          >
+        </h1>
+        <div class="header__icon-innner">
+          <svg
+            class="icon header__icon"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <title>Phone</title>
+            <path
+              class="header__icon-path"
+              d="M20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0ZM12.8125 7.94433C13.2246 7.92003 13.597 8.16633 13.8794 8.6035L16.6138 13.789C16.9017 14.4035 16.7381 15.0614 16.3086 15.5005L15.0562 16.7529C14.9789 16.8588 14.928 16.9781 14.9268 17.1093C15.4071 18.9685 16.864 20.6834 18.1495 21.8628C19.4349 23.0421 20.8164 24.6388 22.6099 25.0171C22.8315 25.0789 23.1031 25.1011 23.2617 24.9536L24.7168 23.4717C25.2191 23.091 25.9457 22.9065 26.4819 23.2178H26.5063L31.4404 26.1304C32.1646 26.5844 32.2397 27.4619 31.7211 27.9956L28.3228 31.3672C27.8209 31.8819 27.1542 32.0549 26.5064 32.0557C23.6415 31.9698 20.9345 30.5637 18.711 29.1187C15.0613 26.4636 11.7136 23.1705 9.61183 19.1919C8.80577 17.5236 7.85887 15.3949 7.94923 13.5328C7.9573 12.8322 8.14683 12.1459 8.64017 11.6944L12.0386 8.29597C12.3033 8.0707 12.5652 7.95893 12.8125 7.94433Z"
+              fill="#94A1B2"
+            />
+          </svg>
+          <svg
+            class="icon header__icon"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <title>Telegram</title>
+            <path
+              class="header__icon-path"
+              d="M20 0C8.95097 0 0 8.95226 0 20C0 31.0477 8.95226 40 20 40C31.049 40 40 31.0477 40 20C40 8.95226 31.0477 0 20 0ZM29.8232 13.7019L26.5406 29.1703C26.2981 30.2671 25.6452 30.5329 24.7342 30.0168L19.7342 26.3316L17.3226 28.6542C17.0568 28.92 16.831 29.1458 16.3148 29.1458L16.6697 24.0568L25.9355 15.6852C26.3394 15.3303 25.8465 15.129 25.3135 15.4839L13.8619 22.6929L8.92645 21.1523C7.85419 20.8142 7.82968 20.08 9.15226 19.5639L28.4348 12.1277C29.3303 11.8052 30.1123 12.3458 29.8219 13.7006L29.8232 13.7019Z"
+              fill="#94A1B2"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="top">
+        <div class="top__inner container">
+          <div class="top__text-inner">
+            <span class="top__text" id="topText"></span>
+            <span class="top__text-cursor" id="topTextCursor"> | </span>
+          </div>
+          <div class="top__pc">
+            <div class="top__monitor">
+              <div class="top__monitor-base">
+                <div class="top__monitor-screen">
+                  <div class="screen-inner screen__first">
+                    <div class="screen__first-line screen__first-1"></div>
+                    <div class="screen__first-line screen__first-2"></div>
+                    <div class="screen__first-line screen__first-3"></div>
+                    <div class="screen__first-line screen__first-4"></div>
+                    <div class="screen__first-line screen__first-5"></div>
+                    <div class="screen__first-line screen__first-6"></div>
+                    <div class="screen__first-line screen__first-7"></div>
+                    <div class="screen__first-line screen__first-8"></div>
+                    <div class="screen__first-line screen__first-9"></div>
+                    <div class="screen__first-line screen__first-10"></div>
+                    <div class="screen__first-line screen__first-11"></div>
+                    <div class="screen__first-line screen__first-12"></div>
+                    <div class="screen__first-line screen__first-13"></div>
+                  </div>
+                  <div class="screen-inner screen__second">
+                    <div class="screen__second-search">
+                      <input type="text" id="screen__second-input" disabled />
+                    </div>
+                    <div class="screen__second-title"></div>
+                    <div class="screen__second-icons">
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        class="screen__second-icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.57266 3.05567V7.06903H7.96525V3.05567H6.75044C6.5088 3.05567 6.27706 2.9581 6.10619 2.78441C5.93532 2.61072 5.83933 2.37515 5.83933 2.12951V0.894632H2.49861C2.33751 0.894632 2.18302 0.959683 2.06911 1.07548C1.9552 1.19127 1.8912 1.34832 1.8912 1.51207V7.06903H1.2838V1.51207C1.2838 1.18456 1.41178 0.870464 1.63961 0.638879C1.86743 0.407294 2.17642 0.277191 2.49861 0.277191L5.83933 0.277191L8.57266 3.05567ZM2.65896 7.59386V10.063H2.1785V9.00471H1.15624V10.063H0.676392V7.59386H1.15685V8.59782H2.1785V7.59386H2.65896ZM4.02623 8.0026V10.063H3.54395V8.0026H2.85576V7.59386H4.71685V8.0026H4.02623ZM5.34794 10.063V8.42061H5.37102L5.94927 9.75367H6.26269L6.8373 8.41999H6.86038V10.063H7.29468V7.59386H6.80875L6.11631 9.19673H6.10052L5.40808 7.59386H4.91911V10.063H5.34794ZM8.20882 9.64685H9.23898V10.063H7.72836V7.59386H8.20821V9.64685H8.20882Z"
+                          class="screen__second-path"
+                        />
+                      </svg>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        class="screen__second-icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.46066 3.41087V9.12756C9.46066 9.44675 9.33178 9.75286 9.10238 9.97857C8.87298 10.2043 8.56185 10.3311 8.23743 10.3311H7.62582V9.72931H8.23743C8.39964 9.72931 8.55521 9.66591 8.66991 9.55306C8.78461 9.44021 8.84904 9.28715 8.84904 9.12756V3.41087H7.62582C7.3825 3.41087 7.14915 3.31578 6.9771 3.1465C6.80505 2.97722 6.7084 2.74763 6.7084 2.50824V1.30473H3.34452C3.18231 1.30473 3.02675 1.36813 2.91205 1.48098C2.79735 1.59383 2.73291 1.74689 2.73291 1.90648V7.32229H2.1213V1.90648C2.1213 1.58729 2.25017 1.28118 2.47957 1.05547C2.70897 0.829771 3.0201 0.702972 3.34452 0.702972L6.7084 0.702972L9.46066 3.41087ZM2.97572 9.63363C2.97922 9.72845 3.00285 9.82149 3.04509 9.90679C3.08733 9.99208 3.14724 10.0677 3.22098 10.1289C3.30049 10.1939 3.39794 10.2444 3.51333 10.2805C3.62913 10.317 3.7647 10.3353 3.92005 10.3353C4.12678 10.3353 4.3019 10.3036 4.44543 10.2402C4.58977 10.1768 4.69966 10.0886 4.77509 9.97543C4.85134 9.8615 4.88946 9.72991 4.88946 9.58068C4.88946 9.44589 4.86214 9.33356 4.8075 9.2437C4.75155 9.15352 4.67244 9.07943 4.57815 9.02887C4.46992 8.96975 4.3532 8.92715 4.23198 8.9025L3.85216 8.81585C3.76282 8.79906 3.67841 8.76288 3.60507 8.70994C3.57717 8.68876 3.55467 8.66147 3.53938 8.63024C3.52409 8.599 3.51643 8.56468 3.517 8.53001C3.517 8.43614 3.55472 8.35911 3.63015 8.29894C3.7068 8.23796 3.81119 8.20747 3.94329 8.20747C4.03055 8.20747 4.10598 8.22111 4.16959 8.24839C4.22845 8.27132 4.28028 8.30884 4.32005 8.35731C4.35769 8.40198 4.38297 8.45546 4.39344 8.51256H4.85215C4.84426 8.39007 4.80191 8.27214 4.72983 8.17197C4.65276 8.06375 4.54698 7.97841 4.42402 7.92525C4.27391 7.86017 4.11092 7.82892 3.94696 7.83378C3.76796 7.83378 3.60976 7.86387 3.47235 7.92404C3.33494 7.98382 3.2275 8.06826 3.15003 8.17738C3.07256 8.2869 3.03383 8.41508 3.03383 8.56191C3.03383 8.68306 3.0587 8.78817 3.10844 8.87722C3.159 8.96669 3.23076 9.0403 3.32373 9.09807C3.41669 9.15544 3.52658 9.19816 3.65339 9.22624L4.03137 9.3129C4.15777 9.34218 4.25216 9.3809 4.31454 9.42904C4.34491 9.45199 4.3692 9.4818 4.38538 9.51595C4.40157 9.55009 4.40915 9.58757 4.40751 9.62521C4.40889 9.68726 4.39073 9.74822 4.35552 9.79972C4.31611 9.85252 4.26192 9.89288 4.19956 9.91586C4.13147 9.94394 4.04727 9.95798 3.94696 9.95798C3.87561 9.95798 3.81037 9.94996 3.75125 9.93391C3.69703 9.91958 3.64572 9.89617 3.59957 9.86471C3.5589 9.83872 3.52408 9.80481 3.49725 9.76507C3.47043 9.72533 3.45217 9.68059 3.44361 9.63363H2.97572ZM1.39103 8.94282C1.39103 8.79318 1.41183 8.66621 1.45342 8.56191C1.48976 8.4658 1.55398 8.38231 1.63812 8.32181C1.72369 8.26484 1.82538 8.23598 1.92864 8.23936C2.02038 8.23936 2.10152 8.25882 2.17206 8.29773C2.24099 8.33397 2.29852 8.38808 2.33842 8.45419C2.38105 8.52379 2.40621 8.60239 2.41181 8.68346H2.8797V8.64013C2.87564 8.52929 2.84821 8.42048 2.79915 8.32062C2.75008 8.22076 2.68046 8.13202 2.59469 8.06004C2.5072 7.98624 2.40548 7.93057 2.29561 7.89636C2.17637 7.85618 2.051 7.83643 1.92497 7.83799C1.70724 7.83799 1.52151 7.88272 1.36779 7.97218C1.21489 8.06124 1.09827 8.18801 1.01795 8.35249C0.938438 8.51697 0.898479 8.71335 0.898071 8.94161V9.24129C0.898071 9.46915 0.937418 9.66492 1.01611 9.8286C1.09644 9.99188 1.21305 10.1174 1.36596 10.2053C1.51886 10.2924 1.7052 10.3359 1.92497 10.3359C2.10397 10.3359 2.26401 10.303 2.40509 10.2372C2.54617 10.1714 2.65829 10.0803 2.74147 9.964C2.82585 9.8445 2.8738 9.7038 2.8797 9.55841V9.51268H2.41243C2.40663 9.59016 2.38187 9.6651 2.34026 9.73112C2.2995 9.79502 2.24204 9.84697 2.1739 9.88156C2.09733 9.91736 2.0134 9.93527 1.92864 9.93391C1.82533 9.93661 1.72355 9.90896 1.63629 9.85448C1.55245 9.79589 1.48868 9.71363 1.45342 9.61859C1.40871 9.4978 1.38755 9.36979 1.39103 9.24129V8.94282ZM5.04481 9.90382C5.00459 9.81894 4.98153 9.72717 4.97692 9.63363H5.44419C5.45276 9.68059 5.47102 9.72533 5.49784 9.76507C5.52466 9.80481 5.55949 9.83872 5.60015 9.86471C5.64338 9.89399 5.69434 9.91686 5.75306 9.93331C5.81096 9.94976 5.87599 9.95798 5.94816 9.95798C6.04806 9.95798 6.13226 9.94394 6.20076 9.91586C6.26311 9.89288 6.31731 9.85252 6.35672 9.79972C6.39193 9.74822 6.41009 9.68726 6.40871 9.62521C6.41028 9.58752 6.4026 9.55001 6.38631 9.51586C6.37002 9.48171 6.3456 9.45193 6.31513 9.42904C6.25315 9.3809 6.15876 9.34218 6.03195 9.3129L5.65398 9.22685C5.5374 9.20281 5.4259 9.15926 5.32432 9.09807C5.23464 9.04386 5.16069 8.96779 5.10964 8.87722C5.05841 8.77987 5.03256 8.67152 5.03441 8.56191C5.03441 8.41508 5.07315 8.2869 5.15062 8.17738C5.22809 8.06826 5.33553 7.98362 5.47294 7.92344C5.61035 7.86327 5.76876 7.83338 5.94816 7.83378C6.13409 7.83378 6.29291 7.86427 6.42461 7.92525C6.55753 7.98663 6.65947 8.06887 6.73042 8.17197C6.80381 8.27427 6.84458 8.3878 6.85274 8.51256H6.39403C6.38356 8.45546 6.35828 8.40198 6.32064 8.35731C6.28087 8.30884 6.22904 8.27132 6.17018 8.24839C6.09852 8.21922 6.0214 8.20527 5.94388 8.20747C5.81177 8.20747 5.70739 8.23796 5.63074 8.29894C5.59481 8.32602 5.5659 8.36106 5.54634 8.40122C5.52679 8.44137 5.51715 8.4855 5.5182 8.53001C5.5182 8.60222 5.54735 8.6624 5.60566 8.71054C5.67905 8.76327 5.76346 8.79924 5.85275 8.81585L6.23256 8.9019C6.36549 8.93199 6.48088 8.97431 6.57874 9.02887C6.67659 9.08343 6.75305 9.15524 6.80809 9.2443C6.86314 9.33336 6.89066 9.44568 6.89066 9.58128C6.89066 9.72971 6.85233 9.8613 6.77568 9.97603C6.69469 10.0942 6.57999 10.1861 6.44602 10.2402C6.3029 10.3036 6.12798 10.3353 5.92125 10.3353C5.7659 10.3353 5.63033 10.3172 5.51453 10.2811C5.40799 10.2497 5.30869 10.1982 5.22218 10.1295C5.14709 10.0678 5.08656 9.99083 5.04481 9.90382Z"
+                          class="screen__second-path"
+                        />
+                      </svg>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 10 8"
+                        fill="none"
+                        class="screen__second-icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.56432 2.70844V8.42625C8.56432 8.7455 8.43542 9.05168 8.20598 9.27743C7.97653 9.50318 7.66534 9.63 7.34085 9.63H5.38779V9.02812H7.34085C7.5031 9.02812 7.65869 8.96471 7.77342 8.85184C7.88814 8.73897 7.95259 8.58588 7.95259 8.42625V2.70844H6.72912C6.48576 2.70844 6.25236 2.61332 6.08028 2.44401C5.90819 2.2747 5.81152 2.04507 5.81152 1.80562V0.601875H2.44698C2.28474 0.601875 2.12914 0.665287 2.01442 0.77816C1.8997 0.891034 1.83525 1.04412 1.83525 1.20375V6.62062H1.22351V1.20375C1.22351 0.884496 1.35241 0.578317 1.58186 0.35257C1.8113 0.126823 2.1225 0 2.44698 0L5.81152 0L8.56432 2.70844Z"
+                          class="screen__second-path"
+                        />
+                        <path
+                          d="M1.8336 6.80135H2.167H2.5004V8.83811C2.5004 9.04068 2.39502 9.23495 2.20744 9.37819C2.01987 9.52143 1.76547 9.6019 1.5002 9.6019C1.23493 9.6019 0.980525 9.52143 0.792951 9.37819C0.605378 9.23495 0.5 9.04068 0.5 8.83811V8.58352H0.833399H1.1668V8.83811C1.1668 8.90564 1.20192 8.97039 1.26445 9.01814C1.32697 9.06588 1.41177 9.09271 1.5002 9.09271C1.58862 9.09271 1.67342 9.06588 1.73595 9.01814C1.79847 8.97039 1.8336 8.90564 1.8336 8.83811V6.80135Z"
+                          class="screen__second-path"
+                        />
+                        <path
+                          d="M2.85754 8.82531C2.8627 8.9305 2.88853 9.03369 2.93358 9.12914C2.98034 9.22698 3.04813 9.31358 3.13223 9.38289C3.22912 9.4602 3.34034 9.51812 3.45966 9.55342C3.58935 9.59402 3.74119 9.61432 3.91518 9.61432C4.14671 9.61432 4.34262 9.57868 4.5029 9.5074C4.65295 9.44654 4.78141 9.34318 4.87212 9.21034C4.95797 9.08132 5.0009 8.93335 5.0009 8.76644C5.0009 8.61396 4.97007 8.48764 4.90842 8.38749C4.84677 8.28735 4.76115 8.2066 4.65155 8.14524C4.54195 8.08389 4.41271 8.0363 4.26384 8.00246L3.83846 7.9057C3.73845 7.88702 3.64391 7.84657 3.56172 7.78728C3.49642 7.73314 3.46377 7.66547 3.46377 7.58427C3.46259 7.53422 3.47339 7.48459 3.49529 7.43944C3.51719 7.39429 3.54957 7.35488 3.5898 7.32443C3.67566 7.25586 3.79256 7.22157 3.94052 7.22157C4.02734 7.2191 4.11371 7.23478 4.19397 7.26758C4.25989 7.29337 4.31795 7.33556 4.36248 7.39006C4.40464 7.4403 4.43295 7.50043 4.44468 7.56465H4.95843C4.94929 7.42435 4.90363 7.29668 4.82143 7.18165C4.74197 7.06571 4.6278 6.97323 4.47893 6.90421C4.33143 6.83564 4.15356 6.80135 3.94532 6.80135C3.74439 6.8009 3.56697 6.83451 3.41308 6.90218C3.25918 6.96984 3.13885 7.06503 3.05208 7.18774C2.96532 7.31089 2.92193 7.45503 2.92193 7.62014C2.91986 7.7434 2.94881 7.86524 3.00619 7.97472C3.06337 8.07656 3.14618 8.1621 3.24662 8.22306C3.36039 8.29186 3.48528 8.34085 3.61583 8.36787L4.03916 8.46464C4.18118 8.49757 4.2869 8.5411 4.35632 8.59524C4.39045 8.62098 4.41779 8.65447 4.43604 8.69287C4.45428 8.73127 4.46288 8.77345 4.46112 8.81583C4.46267 8.88561 4.44233 8.95416 4.4029 9.01207C4.35876 9.07145 4.29806 9.11684 4.22822 9.14267C4.1515 9.17425 4.0572 9.19004 3.94532 9.19004C3.86449 9.19004 3.79165 9.18079 3.7268 9.1623C3.66104 9.1438 3.60396 9.11809 3.55556 9.08515C3.51001 9.05594 3.47101 9.0178 3.44096 8.97311C3.41092 8.92842 3.39047 8.87811 3.38088 8.82531H2.85754Z"
+                          class="screen__second-path"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="screen-inner screen__third">
+                    <div class="screen__third-kompik"></div>
+                    <div class="screen__third__line-1"></div>
+                    <div
+                      class="screen__third-green screen__third-left screen__third__line-2"
+                    ></div>
+                    <div
+                      class="screen__third-right screen__third__line-3"
+                    ></div>
+                    <div
+                      class="screen__third-rigth screen__third__line-4"
+                    ></div>
+                    <div
+                      class="screen__third-green screen__third-right screen__third__line-5"
+                    ></div>
+                    <div
+                      class="screen__third-green screen__third-right screen__third__line-6"
+                    ></div>
+                    <div
+                      class="screen__third-green screen__third-right screen__third__line-7"
+                    ></div>
+                    <div
+                      class="screen__third-green screen__third-left screen__third__line-8"
+                    ></div>
+                    <div
+                      class="screen__third-green screen__third-left screen__third__line-9"
+                    ></div>
+                    <div
+                      class="screen__third-green screen__third-left screen__third__line-10"
+                    ></div>
+                    <div
+                      class="screen__third-green screen__third-right screen__third__line-11"
+                    ></div>
+                    <div class="screen__third-webpack">
+                      <svg width="32" height="32" viewBox="0 0 32 32">
+                        <path
+                          class="webpack-icon"
+                          fill="red"
+                          d="m28.021 24.161l-11.552 6.505v-5.068l7.198-3.943zm.792-.713V9.839l-4.229 2.432v8.745zm-24.912.713l11.552 6.505v-5.068l-7.198-3.943zm-.792-.713V9.839l4.229 2.432v8.745zm.495-14.49l11.849-6.672v4.901l-7.646 4.188zm24.714 0L16.469 2.286v4.901l7.646 4.188zm-12.865 15.49l-7.099-3.891v-7.703l7.099 4.083zm1.016 0l7.099-3.891v-7.703l-7.099 4.083zM8.833 11.964l7.13-3.901l7.13 3.901l-7.13 4.099z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top__keyboard">
+              <div class="top__base">
+                <div class="top__kayboard-inner">
+                  <button class="key key-small" id="Escape"></button>
+                  <button class="key key-small" id="F1"></button>
+                  <button class="key key-small" id="F2"></button>
+                  <button class="key key-small" id="F3"></button>
+                  <button class="key key-small" id="F4"></button>
+                  <button class="key key-small" id="F5"></button>
+                  <button class="key key-small" id="F6"></button>
+                  <button class="key key-small" id="F7"></button>
+                  <button class="key key-small" id="F8"></button>
+                  <button class="key key-small" id="F9"></button>
+                  <button class="key key-small" id="F10"></button>
+                  <button class="key key-small" id="F11"></button>
+                  <button class="key key-small" id="F12"></button>
+                  <button class="key key-tab q Q"></button>
+                  <button class="key key-normal w W"></button>
+                  <button class="key key-normal e E"></button>
+                  <button class="key key-normal r R"></button>
+                  <button class="key key-normal t T"></button>
+                  <button class="key key-normal y Y"></button>
+                  <button class="key key-normal u U"></button>
+                  <button class="key key-tab i I"></button>
+                  <button class="key key-tab"></button>
+                  <button class="key key-normal o O"></button>
+                  <button class="key key-normal p P"></button>
+                  <button class="key key-normal a A"></button>
+                  <button class="key key-normal s S"></button>
+                  <button class="key key-normal d D"></button>
+                  <button class="key key-normal f F"></button>
+                  <button class="key key-normal g G"></button>
+                  <button class="key key-enter"></button>
+                  <button class="key key-shift"></button>
+                  <button class="key key-normal h H"></button>
+                  <button class="key key-normal j J"></button>
+                  <button class="key key-normal k K"></button>
+                  <button class="key key-normal l L"></button>
+                  <button class="key key-normal z Z"></button>
+                  <button class="key key-tab"></button>
+                  <button class="key key-normal x X"></button>
+                  <button class="key key-normal c C"></button>
+                  <button class="key key-normal v V"></button>
+                  <button class="key key-space"></button>
+                  <button class="key key-normal b B"></button>
+                  <button class="key key-normal n N"></button>
+                  <button class="key key-normal m M"></button>
+                </div>
+                <div class="top__touchpad"></div>
+              </div>
+            </div>
+            <div class="top__keyboard-shadow"></div>
+            <div class="top__plate"></div>
+          </div>
+        </div>
+      </section>
+      <section class="skills__container">
+        <div class="skills hard__skills">
+          <h2 class="skills-title hard__skills-title">
+            <span>Hard </span>
+            skills
+          </h2>
+          <div class="skill__inner">HTML (HTML5), EJS</div>
+          <div class="skill__inner">
+            CSS (CSS3), SASS (SCSS), Bootstrap, Animations
+          </div>
+          <div class="skill__inner">
+            JavaScript (ES6+, OOP), jQuery, TypeScript, React
+          </div>
+          <div class="skill__inner">Figma, Adobe Photoshop, Inkscape</div>
+          <div class="skill__inner">Git (GitHub, BitBucket, GitLab)</div>
+          <div class="skill__inner">BEM, Accessibility, UX</div>
+        </div>
+        <div class="skills soft__skills">
+          <h2 class="skills-title soft__skills-title">
+            <span>Soft </span>
+            skills
+          </h2>
+          <!-- <div class="skill__inner">
+            Эффективно работаю в команде, имею опыт коммуникации и
+            сотрудничества с дизайнерами, менеджерами и другими участниками
+            проекта
+          </div>
+          <div class="skill__inner">
+            Имею опыт эффективного сотрудничества в географически распределенных
+            командах
+          </div> -->
+          <div class="skill__inner">
+            Активно ищу пути для профессионального и личностного
+            совершенствования и открыт к конструктивной обратной связи
+          </div>
+          <div class="skill__inner">
+            Скрупулезно подхожу к выполнению всех пунктов технического задания
+          </div>
+          <div class="skill__inner">
+            Постоянно совершенствую свои профессиональные навыки, активно изучая
+            новейшие технологии в своей области
+          </div>
+          <div class="skill__inner">
+            Постоянно совершенствую свои профессиональные навыки, активно изучая
+            новейшие технологии в своей области
+          </div>
+          <div class="skill__inner">
+            Беру на себя ответственность за своевременную сдачу задач/проектов
+          </div>
+        </div>
+      </section>
+      <section class="education__container">
+        <h2 class="education__title">Образование</h2>
+        <div class="education__inner">
+          <div>
+            <img
+              class="education__img"
+              src="./images/icon/kkmt__icon.svg"
+              alt="Колледж космического машиностроения и технологий"
+              width="200"
+              height="150"
+            />
+          </div>
+          <h3 class="education__text">
+            Колледж космического машиностроения и технологий (2023-...)
+          </h3>
+        </div>
+        <p>нуу и разумеетсятся куча курсов</p>
+      </section>
+      <section class="examples__container">
+        <h2 class="examples__title">Ссылки на примеры работ:</h2>
+        <div class="examples">
+          <div class="example ItBook">
+            <img
+              class="ItBook__img"
+              src="./images/icon/ITBook__icon.svg"
+              alt="ItBook"
+            />
+            <a class="ItBook__link" href="https://nubookd.github.io/ItBook/"
+              >Сайт школы</a
+            >
+          </div>
+          <div class="example Marokko">
+            <img
+              class="Marokko__img"
+              src="./images/icon/Marokko__icon.svg"
+              alt="Marokko"
+            />
+            <a
+              class="Marokko__link"
+              href="https://nubookd.github.io/Marokko-post/"
+              >Сайт студии реставрации мягкой мебели</a
+            >
+          </div>
+          <div class="example postUp">
+            <img
+              class="postUp__img"
+              src="./images/icon/PostUp__icon.svg"
+              alt="postUp"
+            />
+            <a class="ToDoList__link" href="https://nubookd.github.io/postUp/"
+              >ToDoList на react</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="github__icon" href="https://github.com/Nubookd">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          viewBox="0 0 16 16"
+        >
+          <title>Github</title>
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M5.75 14.25s-.5-2 .5-3c0 0-2 0-3.5-1.5s-1-4.5 0-5.5c-.5-1.5.5-2.5.5-2.5s1.5 0 2.5 1c1-.5 3.5-.5 4.5 0c1-1 2.5-1 2.5-1s1 1 .5 2.5c1 1 1.5 4 0 5.5s-3.5 1.5-3.5 1.5c1 1 .5 3 .5 3m-5-.5c-1.5.5-3-.5-3.5-1"
+          />
+        </svg>
+      </a>
+      <div class="footer__icon-innner">
+        <svg
+          class="icon footer__icon"
+          width="70"
+          height="70"
+          viewBox="0 0 40 40"
+          fill="none"
+        >
+          <title>Phone</title>
+          <path
+            class="footer__icon-path"
+            d="M20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0ZM12.8125 7.94433C13.2246 7.92003 13.597 8.16633 13.8794 8.6035L16.6138 13.789C16.9017 14.4035 16.7381 15.0614 16.3086 15.5005L15.0562 16.7529C14.9789 16.8588 14.928 16.9781 14.9268 17.1093C15.4071 18.9685 16.864 20.6834 18.1495 21.8628C19.4349 23.0421 20.8164 24.6388 22.6099 25.0171C22.8315 25.0789 23.1031 25.1011 23.2617 24.9536L24.7168 23.4717C25.2191 23.091 25.9457 22.9065 26.4819 23.2178H26.5063L31.4404 26.1304C32.1646 26.5844 32.2397 27.4619 31.7211 27.9956L28.3228 31.3672C27.8209 31.8819 27.1542 32.0549 26.5064 32.0557C23.6415 31.9698 20.9345 30.5637 18.711 29.1187C15.0613 26.4636 11.7136 23.1705 9.61183 19.1919C8.80577 17.5236 7.85887 15.3949 7.94923 13.5328C7.9573 12.8322 8.14683 12.1459 8.64017 11.6944L12.0386 8.29597C12.3033 8.0707 12.5652 7.95893 12.8125 7.94433Z"
+            fill="#94A1B2"
+          />
+        </svg>
+        <svg
+          class="icon footer__icon"
+          width="70"
+          height="70"
+          viewBox="0 0 40 40"
+          fill="none"
+        >
+          <title>Telegram</title>
+          <path
+            class="footer__icon-path"
+            d="M20 0C8.95097 0 0 8.95226 0 20C0 31.0477 8.95226 40 20 40C31.049 40 40 31.0477 40 20C40 8.95226 31.0477 0 20 0ZM29.8232 13.7019L26.5406 29.1703C26.2981 30.2671 25.6452 30.5329 24.7342 30.0168L19.7342 26.3316L17.3226 28.6542C17.0568 28.92 16.831 29.1458 16.3148 29.1458L16.6697 24.0568L25.9355 15.6852C26.3394 15.3303 25.8465 15.129 25.3135 15.4839L13.8619 22.6929L8.92645 21.1523C7.85419 20.8142 7.82968 20.08 9.15226 19.5639L28.4348 12.1277C29.3303 11.8052 30.1123 12.3458 29.8219 13.7006L29.8232 13.7019Z"
+            fill="#94A1B2"
+          />
+        </svg>
+      </div>
+    </footer>
+    <div class="preloader">
+      <div class="preloader__in"></div>
+    </div>
+  </body>
+</html>

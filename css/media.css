@@ -1,0 +1,59 @@
+/* Переменные */
+
+:root {
+  --fiol-dark: rgba(101, 58, 238, 1);
+  --fiol-light: rgba(186, 165, 247, 1);
+  --blue: rgba(60, 17, 195, 1);
+  --gray: rgba(148, 161, 178, 1);
+  --dark: rgba(22, 22, 26, 1);
+  --light: rgba(255, 255, 254, 1);
+
+  --pc-brown-dark: rgba(70, 57, 50, 1);
+  --pc-brown-light: rgba(176, 159, 140, 1);
+  --pc-pink-dark: rgba(123, 82, 103, 1);
+  --pc-pink-light: rgba(199, 181, 215, 1);
+  --pc-green: rgba(82, 123, 118, 1);
+
+  --title: clamp(42px, 5vw, 64px);
+  --second-title: clamp(34px, 4.444vw, 52px);
+  --text: clamp(22px, 2.222vw, 32px);
+  --second-text: clamp(16px, 1.667vw, 24px);
+
+  --Montserrat: "Montserrat", sant-serif;
+  --Montserrat__Alternates: "Montserrat Alternates", sant-serif;
+  --Mooli: "Mooli", sant-serif;
+
+  --borber-radius: clamp(10px, 2.083vw, 30px);
+
+  --gridWidth: 1410px;
+  --gridPadding: 30px;
+}
+
+@media (max-width: 1024px) {
+  .top__inner {
+    flex-direction: column;
+    gap: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .skills__container {
+    flex-direction: column;
+    margin-inline: 40px;
+  }
+
+  .screen-inner {
+    border: 1px solid var(--dark);
+  }
+
+  .example {
+    flex-direction: column;
+    width: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .screen__first-line {
+    height: 4px;
+  }
+}

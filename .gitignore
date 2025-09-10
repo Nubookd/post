@@ -1,0 +1,43 @@
+node_modules/
+/.pnp
+.pnp.js
+
+# Системные файлы
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Файлы редакторов и IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Временные файлы
+*.tmp
+*.temp
+.cache/
+
+# Файлы окружения
+.env
+.env.local
+.env.production
+
+# Папка сборки (если используете сборщик)
+/dist
+/build
+/out
+
+# Автогенерируемые файлы
+.sass-cache/
+.parcel-cache/
